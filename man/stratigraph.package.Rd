@@ -12,8 +12,8 @@ A collection of tools for plotting and analyzing paleontological and geological 
 \tabular{ll}{
   Package: \tab stratigraph\cr
   Type: \tab Package\cr
-  Version: \tab 0.6\cr
-  Date: \tab 2010-03-30\cr
+  Version: \tab 0.61\cr
+  Date: \tab 2010-06-07\cr
   License: \tab GPL v. 3 or later copyleft\cr
   }
 

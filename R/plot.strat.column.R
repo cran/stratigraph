@@ -514,8 +514,8 @@ if(!is.null(output.file)){
   pdf(file = output.file, height = height,
       width = width, family = 'Times', pointsize = fontsize)
 }else{
-  warning('displaying a quartz window only works on a macintosh; specify an output.file name on all other platforms')
-  quartz(height = height, width = width, family = 'Times', pointsize = fontsize)
+  #warning('displaying a quartz window only works on a macintosh; specify an output.file name on all other platforms')
+  dev.new(height = height, width = width, family = 'Times', pointsize = fontsize)
 }
 
 # The largest thing drawn
