@@ -52,7 +52,8 @@ cat(paste(ncol(pa), 'species appear at more than',
 
 # calculate standing diversity and o/e rates at sampled levels
 stand.div <- rowSums(pa)
-oe <- a.datums(strat.column(counts, depths = depths))
+oe <- a.datums(strat.column(counts, depths = depths),
+               increasing.down = TRUE)
 oe.merge <- merge(as.data.frame(table(oe$fads)),
             as.data.frame(table(oe$lads)),
             by = 1, all = TRUE)
@@ -77,6 +78,15 @@ for(i in 1:(length(bound.names) - 1)){ #loop through boundaries
 }
 names(bx) <- bound.names
 
+# Fundamental measures from Foote (2000b):
+#  FL = # of taxa confined to interval (not crossing either
+#       top or bottom)
+#  bL = # of taxa going extinct in interval (crossing only
+#       bottom boundary)
+#  Ft = # of taxa originating in interval (crossing only top
+#       boundary)
+#  bt = # of taxa crossing both top and bottom of interval
+
 # calculate standing diversity and o/e rates at breaks
 fund <- matrix(NA, nrow = length(breaks) - 1, ncol = 4)
 colnames(fund) <- c('FL', 'bL', 'Ft', 'bt')
@@ -89,19 +99,26 @@ for(i in 1:(length(breaks) - 1)){ #loop through intervals
     bottom <- breaks[i+1]
     if(is.na(top)) top <- -Inf
     if(is.na(bottom)) bottom <- Inf
-    if(!(fad < top || lad > bottom)){
+    #cat(colnames(pa)[j], '\t')
+    #cat(fad, lad, bottom, top, '\t')
+    if(!(fad < top || lad > bottom)){ # taxon in interval
+        #cat('overlap\t')
       if(fad < bottom && lad > top){
         FL <- FL + 1 #confined to interval
+        #cat('FL\n')
       }else if(fad >= bottom && lad >= top){
         bL <- bL + 1 #only bottom crossed
+        #cat('bL\n')
       }else if (fad <= bottom && lad <= top){
         Ft <- Ft + 1 #only top crossed
+        #cat('FT\n')
       }else if(fad >= bottom && lad <= top){
         bt <- bt + 1 #crossing both boundaries
+        #cat('bt\n')
       }else{
         stop('huh?')
       }
-    }
+    }#else cat ('\n')
   }
   fund[i,] <- c(FL, bL, Ft, bt)
 }

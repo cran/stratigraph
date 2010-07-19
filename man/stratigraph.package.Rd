@@ -12,12 +12,14 @@ A collection of tools for plotting and analyzing paleontological and geological 
 \tabular{ll}{
   Package: \tab stratigraph\cr
   Type: \tab Package\cr
-  Version: \tab 0.61\cr
-  Date: \tab 2010-06-07\cr
+  Version: \tab 0.62\cr
+  Date: \tab 2010-07-19\cr
   License: \tab GPL v. 3 or later copyleft\cr
   }
 
-Package overview; still in beta.
+Package overview; still in beta.\cr
+The development of this package was supported by the Colombian Petroleum Institute, Ecopetrol S.A.\cr
+
 Includes functions:
   \code{\link{writeTilia}}\cr
   \code{\link{writeGPDascii}}\cr

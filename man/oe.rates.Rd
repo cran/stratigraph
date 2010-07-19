@@ -24,12 +24,14 @@ oe.rates(x, depths = NULL, breaks = NULL,
 
 \value{
 
-\code{oe.rates} returns a list of \code{$basic,} which is a data frame with columns stand.div, orig and ext giving standing diversity, origination and extinction rates at the sampled depths/times; \code{$bx,} which are the boundary crossers at each sampled depth/time; \code{$intervals,} which gives the lengths of each interval (in depth or time); and \code{$interpol,} which gives interpolated rates per time as calculated by Foote(2000).
+\code{oe.rates} returns a list of \code{$basic,} which is a data frame with columns stand.div, orig and ext giving standing diversity, origination and extinction rates at the sampled depths/times; \code{$bx,} which are the boundary crossers at each sampled depth/time; \code{$intervals,} which gives the lengths of each interval (in depth or time); and \code{$interpol,} which gives interpolated rates per time as calculated by Foote(2000b).
 
 }
 \references{
 
-Foote, M. (2000) `Origination and Extinction Components of Taxonomic Diversity: Paleozoic and Post-Paleozoic Dynamics' Paleobiology 26(4):578--605. 
+Foote, M. (2000a) `Origination and Extinction Components of Taxonomic Diversity: Paleozoic and Post-Paleozoic Dynamics' Paleobiology 26(4):578--605. 
+
+Foote, M. (2000b) `Origination and extinction components of taxonomic diversity: general problems' Paleobiology 26 (supplement to No. 4):74--102.
 
 }
 
