@@ -11,11 +11,6 @@
     Six synthetic sections used as examples by Edwards (1984).
 }
 \usage{data(sI)}
-\usage{data(sII)}
-\usage{data(sIII)}
-\usage{data(sIV)}
-\usage{data(sV)}
-\usage{data(sVI)}
 \format{
   Data frames with taxa in columns (except the first column, which has the depth of each sample) and samples in rows.
 }
