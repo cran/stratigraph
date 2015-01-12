@@ -8,18 +8,18 @@
 \description{
 Subroutines called by other functions; none are intended to be called directly by the user.}
 
-\usage{}
-\arguments{}
-\details{}
-\value{}
-\references{}
+%\usage{}
+%\arguments{}
+%\details{}
+%\value{}
+%\references{}
 \author{Walton Green}
-\note{}
+%\note{}
 
 %Make other sections like Warning with \section{Warning }{....}
 
 \seealso{\code{\link{plot.strat.column}},
          \code{\link{stratigraph}}}
 
-\examples{}
+%\examples{}
 \keyword{misc}

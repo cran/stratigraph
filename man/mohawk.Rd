@@ -24,7 +24,8 @@
 }
 }
 
-\details{}
+%\details{}
+
 \source{
 ftp://ftp.ncdc.noaa.gov/pub/data/paleo/pollen/asciifiles/fossil/ascfiles/gpd/mohawk.txt
 }

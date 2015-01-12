@@ -386,9 +386,9 @@ spplot <- function(count.vector, depths, cat.label,
   #          rot = 90, just = 'left')
 
   vp2 <- viewport(x = 0, y = 0,
-                  w = unit(1, 'npc') -
+                  width = unit(1, 'npc') -
                       unit(offset.from.max, 'points'),
-                  h = 1,
+                  height = 1,
                   just = c('left', 'bottom'), clip = 'off')
   pushViewport(vp2)
 
@@ -521,10 +521,10 @@ if(!is.null(output.file)){
 # The largest thing drawn
 vp14 <- viewport(x = outer.margins$left,
                  y = outer.margins$bottom, 
-                 w = unit(1, "npc") -
+                 width = unit(1, "npc") -
                      outer.margins$right -
                      outer.margins$left, 
-                 h = unit(1, "npc") -
+                 height = unit(1, "npc") -
                      outer.margins$top -
                      outer.margins$bottom, 
                  just = c("left", "bottom"), clip = "off")
@@ -534,8 +534,8 @@ grid.rect(gp = b14) #largest thing drawn
 
 # Metadata viewport
 vp13 <- viewport(x = 0.5, y = 0.5, 
-        w = unit(1, "npc") - unit(2, 'lines'),
-        h = unit(1, "npc") - unit(2, 'lines'), 
+        width = unit(1, "npc") - unit(2, 'lines'),
+        height = unit(1, "npc") - unit(2, 'lines'), 
         just = c("centre", "centre"), clip = "off")
 pushViewport(vp13)
 
@@ -601,7 +601,7 @@ metadata.space <- unit(2, 'inches')
 
 # Taxon category heading viewport
 vp12 <- viewport(x = 0, y = 0, 
-        w = unit(1, "npc"), h = unit(1, "npc") - metadata.space, 
+        width = unit(1, "npc"), height = unit(1, "npc") - metadata.space, 
         just = c("left", "bottom"), clip = "off")
 pushViewport(vp12)
 grid.rect(gp = b12)
@@ -611,9 +611,9 @@ sample.totals.space <- unit(1.5, 'inches')
 # Space to plot total abundances for each sample (depth)
 if(sample.totals){
   vp11 <- viewport(x = 0, y = 0, 
-                   w = unit(1, "npc") -
+                   width = unit(1, "npc") -
                        sample.totals.space,
-                   h = unit(1, "npc"), 
+                   height = unit(1, "npc"), 
                    just = c("left", "bottom"), clip = "off")
   pushViewport(vp11)
 }
@@ -623,8 +623,8 @@ sample.category.totals.space <- unit(0.5, 'inches')
 #Space to plot taxon category total abundances for each sample
 if(sample.category.totals){
   vp10 <- viewport(x = 0, y = 0, 
-          w = unit(1, "npc") - sample.category.totals.space,
-          h = unit(1, "npc"), 
+          width = unit(1, "npc") - sample.category.totals.space,
+          height = unit(1, "npc"), 
           just = c("left", "bottom"), clip = "off")
   pushViewport(vp10)
 }
@@ -635,8 +635,8 @@ sample.labels.space <- unit(2, 'lines')
 if(sample.nos){
   vp9 <- viewport(x = unit(0, 'npc') + unit(1, 'lines'),
                   y = 0, 
-                  w = unit(1, "npc") - 2 * sample.labels.space,
-                  h = unit(1, "npc"), 
+                  width = unit(1, "npc") - 2 * sample.labels.space,
+                  height = unit(1, "npc"), 
           just = c("left", "bottom"), clip = "off")
   pushViewport(vp9)
 }
@@ -659,15 +659,15 @@ if(debug){
 
 # Leaving space for the depth labels and strat column (if any)
 vp8 <- viewport(x = 1, y = 0,
-        w = unit(1, "npc") - strat.space, h = unit(1, "npc"), 
+        width = unit(1, "npc") - strat.space, height = unit(1, "npc"), 
         just = c("right", "bottom"), clip = "off")
 pushViewport(vp8)
 grid.rect(gp = b8)
 
 # Leaving one line for the taxon category heading labels
 vp7 <- viewport(x = 0, y = 0,
-                w = unit(1, "npc"),
-                h = unit(1, "npc") - unit(1, 'lines'), 
+                width = unit(1, "npc"),
+                height = unit(1, "npc") - unit(1, 'lines'), 
                 just = c("left", "bottom"), clip = "off")
 pushViewport(vp7)
 grid.rect(gp = b7)
@@ -678,8 +678,8 @@ longest.taxon.name <- (1:ncol(counts))[namewidths == longestnw]
 
 # Leaving room for species names
 vp6 <- viewport(x = 0, y = unit(3, 'lines'),
-        w = unit(1, "npc"),
-        h = unit(1, "npc") - unit(4, 'lines') -
+        width = unit(1, "npc"),
+        height = unit(1, "npc") - unit(4, 'lines') -
             unit(1, 'strwidth',
                  data = colnames(counts)[longest.taxon.name]), 
         just = c("left", "bottom"), clip = "off")
@@ -689,8 +689,8 @@ grid.rect(gp = b6)
 # Leaving one line for taxon count totals
 if(show.taxon.count.totals){
   vp5 <- viewport(x = 0, y = 0,
-          w = unit(1, "npc"),
-          h = unit(1, "npc") - unit(1, 'lines'), 
+          width = unit(1, "npc"),
+          height = unit(1, "npc") - unit(1, 'lines'), 
           just = c("left", "bottom"), clip = "off")
   pushViewport(vp5)
   grid.rect(gp = b5)
@@ -698,8 +698,8 @@ if(show.taxon.count.totals){
 
 # Finally the plotting area, leaving one line for taxon category labels
 vp4 <- viewport(x = 0, y = 0,
-        w = unit(1, "npc"),
-        h = unit(1, "npc") - unit(1, 'lines'), 
+        width = unit(1, "npc"),
+        height = unit(1, "npc") - unit(1, 'lines'), 
         just = c("left", "bottom"), clip = "off")
 pushViewport(vp4)
 grid.rect(gp = b4)

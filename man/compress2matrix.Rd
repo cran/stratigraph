@@ -30,20 +30,16 @@ Compressed format data has a line of data for each site consisting of tab-separa
 The return value of the function is a list including a vector of site names, a vector of taxon names/codes, and a sites-by-species matrix. As a side-product, the function saves (in the directory specified by path) a matrix (tab-delimited text file ending in .MTX) for each locality (.BB file) and the overall sites-by-species matrix as a file named 'SiteBySpp.MTX'.
 
 }
-\references{
-
-}
 
 \author{Walton Green}
-\note{Currently no other notes.} 
+%\note{Currently no other notes.} 
 
 %Make other sections like Warning with \section{Warning }{....}
 
+%\references{No references yet.}
+
+%\examples{No examples yet.}
+
 \seealso{\code{\link{plot.strat.column}}, \code{\link{stratigraph}}}
-
-\examples{
-
-
-}
 
 \keyword{manip}

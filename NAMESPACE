@@ -1,10 +1,31 @@
-# Default NAMESPACE created by R
-# Remove the previous line if you edit this file
+#useDynLib(stratigraph)
 
 # Export all names
 exportPattern(".")
 
-# Import all packages listed as Imports or Depends
-import(
-  grid
-)
+#S3method(is, strat.column)
+S3method(plot, strat.column)
+S3method(summary, strat.column)
+
+#export(a.datums,
+#	addpart,
+#	as.strat.column,
+#	compress2matrix,
+#	dcloc,
+#	dloc,
+#	fill.ranges,
+#	gluesheets,
+#	grid.prop.plot,
+#	is.strat.column,
+#	oe.rates,
+#	plot.strat.column,
+#	rangechart,
+#	readGPDascii,
+#	readTilia,
+#	strat.column,
+#	summary.strat.column,
+#	writeCONOP,
+#	writeGPDascii,
+#	writeTilia)
+
+import(grid)

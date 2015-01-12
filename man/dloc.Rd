@@ -40,7 +40,7 @@ dcloc(x, y, pins, weights = NULL,
   \item{plot}{0, 1, 2; larger number provides more plots.}
 }
 
-\details{}
+%\details{}
 
 \value{
 Returns a list of three things: locs, bestloc and bestsse. locs gives the ending population of LOCs; best loc gives the best LOC; and bestsse gives the sum of squared errors for the best LOC. Each of these has a length equal to the number of different numbers of segments considered, so if 1, 2, 3, 4, and 5-segment LOCs were considered, locs, bestloc and bestsse will each have length 5.
@@ -56,7 +56,7 @@ Miller, F.X., 1977 `The graphic correlation method in biostratigraphy' in Concep
 
 \author{Walton Green}
 
-\note{} 
+%\note{} 
 
 %Make other sections like Warning with \section{Warning }{....}
 
@@ -64,6 +64,7 @@ Miller, F.X., 1977 `The graphic correlation method in biostratigraphy' in Concep
          \code{\link{stratigraph}}}
 
 \examples{
+\dontrun{
 
 # simplest example
 #x <- c(0,1,2,3,5,7,9,17,18,20) + rnorm(10)/5
@@ -75,8 +76,6 @@ y <- c(0.152, 0.855, 1.784, 4.072, 4.055, 3.992,
 
 xy.loc <- dloc(x, y, end.segs = 3, pop = 10, max.gen = 10,
                start = 'uniform', plot = 2)
-
-\dontrun{
 
 xy.loc <- dloc(x, y, pin.ends = 'top', end.segs = 3,
                pop = 100, max.gen = 5, start = 'lm', plot = 1)

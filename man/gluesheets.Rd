@@ -17,8 +17,8 @@ gluesheets(PATH = NULL, out.file = 'fileout.txt')
   Ask Silane da Silva....
 }
 
-\value{}
-\references{}
+%\value{}
+%\references{}
 
 \author{Walton Green}
 

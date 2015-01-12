@@ -21,7 +21,7 @@
   Silane da Silva
 }
 
-\references{}
+%\references{No references yet.}
 
 \examples{
   data(corneta)

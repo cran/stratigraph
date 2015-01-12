@@ -93,7 +93,8 @@ Plots abundance (or range or relative abundance) diagrams of stratigraphic data,
 \value{
   Returns invisibly.
 }
-\references{}
+
+%\references{}
 
 \author{Walton Green}
 \note{The output of this function will almost always need to be modified slightly in a vector drawing program like Inkscape or Adobe Illustrator before publication.}

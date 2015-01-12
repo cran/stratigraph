@@ -22,12 +22,11 @@ fill.ranges(x, out = 'internals', ...)
 \code{fill ranges} returns the type of output that it was given as input to x: either a strat.column or a numeric matrix.
 }
 
-\references{
-
-}
+%\references{}
 
 \author{Walton Green}
-\note{} 
+
+%\note{} 
 
 %Make other sections like Warning with \section{Warning }{....}
 

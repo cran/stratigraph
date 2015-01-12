@@ -33,7 +33,7 @@ lads(x, depths = NULL, skip = 0, increasing.down = FALSE, ...)
 }
 
 \author{Walton Green}
-\note{} 
+\note{Currently no other notes.}
 
 %Make other sections like Warning with \section{Warning }{....}
 

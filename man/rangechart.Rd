@@ -38,11 +38,11 @@ rangechart(x = NULL,
   \item{cex.yaxis}{character expansion applied to y-axis labels, defaulting to 1. Compare par(cex.axis = 1); passed to axis(2, ...).}
   \item{...}{arguments passed through to lower level plotting functions.}
 }
-\details{}
+%\details{}
 \value{Returns invisibly.}
-\references{}
+%\references{}
 \author{Walton Green}
-\note{}
+%\note{}
 
 %Make other sections like Warning with \section{Warning }{....}
 

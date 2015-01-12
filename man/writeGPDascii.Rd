@@ -30,7 +30,7 @@ writeTilia(...)
   \item{output.file}{if NULL (the default), print output to the terminal}
   \item{...}{not currently used.}
 }
-\details{}
+%\details{}
 \value{Returns invisibly.}
 \references{
 
@@ -42,7 +42,8 @@ http://www.ncdc.noaa.gov/paleo/pollen/gpdascii.html
 }
 
 \author{Walton Green}
-\note{} 
+
+%\note{} 
 
 %Make other sections like Warning with \section{Warning }{....}
 

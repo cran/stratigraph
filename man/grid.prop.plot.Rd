@@ -13,14 +13,16 @@ grid.prop.plot(x, y = NULL,
   \item{y}{a vector with length equal to the number of rows in x; if NULL, it will be replaced by 1:nrow(x)}
   \item{increasing.down}{FALSE (default) plots times (depths) increasing up from the bottom to the top of the plot.}
 }
-\details{}
-\value{
-  Returns invisibly.
-}
-\references{}
+
+%\details{}
+
+\value{Returns invisibly.}
+
+%\references{}
 
 \author{Walton Green}
-\note{} 
+
+%\note{} 
 
 %Make other sections like Warning with \section{Warning }{....}
 

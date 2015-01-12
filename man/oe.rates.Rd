@@ -36,7 +36,8 @@ Foote, M. (2000b) `Origination and extinction components of taxonomic diversity:
 }
 
 \author{Walton Green}
-\note{} 
+
+%\note{} 
 
 %Make other sections like Warning with \section{Warning }{....}
 

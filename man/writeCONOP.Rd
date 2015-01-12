@@ -26,12 +26,10 @@ writeCONOP(x, tax.check = TRUE, out.dir = getwd(),
   \item{REF2}{not documented.}
   \item{REF3}{not documented.}
 }
-\details{
 
-}
-
-\value{}
-\references{}
+%\details{}
+%\value{}
+%\references{}
 
 \author{Walton Green}
 \note{This is a legacy function that may be removed soon.}

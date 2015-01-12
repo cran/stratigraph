@@ -138,13 +138,13 @@ METADATA
   $metadata     : chr [1:z] \# random other notes
 }
 
-\value{
-  Returns an object of type \code{strat.column}
-}
-\references{}
+\value{Returns an object of type \code{strat.column}}
+
+%\references{}
 
 \author{Walton Green}
-\note{}
+
+%\note{}
 
 %Make other sections like Warning with \section{Warning }{....}
 

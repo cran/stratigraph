@@ -14,7 +14,7 @@ readTilia(...)
   \item{x}{a string giving the file path and name or a URL from which to obtain the ascii (.txt) file to read.}
   \item{...}{not currently used.}
 }
-\details{}
+%\details{}
 \value{
   Returns a list with the following elements: \code{counts} (count matrix of depths by taxa), \code{depths,} \code{sample.names,} \code{absolute.ages,} \code{taxa} (the full taxon names), \code{short.names} (8 character short names), \code{tax.cat} (taxonomic category, a factor to group the taxa), and \code{metadata} (a character vector providing commented metadata).
 }
@@ -28,7 +28,8 @@ http://www.ncdc.noaa.gov/paleo/pollen/gpdascii.html
 }
 
 \author{Walton Green}
-\note{}
+
+%\note{}
 
 %Make other sections like Warning with \section{Warning }{....}
 
